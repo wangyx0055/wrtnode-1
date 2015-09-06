@@ -1,0 +1,4 @@
+echo param $0 $1 $2
+echo $2 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$1/direction
+echo $2 > /sys/class/gpio/gpio$1/value
